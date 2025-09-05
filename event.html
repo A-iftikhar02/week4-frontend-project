@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title id="pageTitle">Event — Details</title>
+
+  <meta property="og:title" content="EventSphere — Event Details">
+  <meta property="og:description" content="View full event details with description, location map, and RSVP.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="assets/img/placeholder.svg">
+  <meta name="theme-color" content="#0b1020">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="event">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="EventSphere Home">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>EventSphere</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="events.html">Upcoming Events</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="detail-hero">
+      <div class="container">
+
+        <!-- Back Button -->
+        <button class="back-btn" onclick="history.back()">← Back</button>
+
+        <!-- Replaced by app.js -->
+        <div id="banner" class="banner" role="img" aria-label="Event image/banner"></div>
+
+        <div class="detail-grid">
+          <article class="detail-card">
+            <h1 id="title" class="card-title">Event Title</h1>
+            <p id="meta" class="card-meta">Date & Time · Venue</p>
+            <p id="desc" class="card-desc">Event description will appear here.</p>
+            <div class="card-actions">
+              <a id="rsvp" class="button" href="#">RSVP / Register</a>
+            </div>
+          </article>
+
+          <aside class="detail-card">
+            <h3 style="margin-top:0;">Location</h3>
+            <iframe id="map" class="map-embed" loading="lazy" allowfullscreen></iframe>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> EventSphere · All rights reserved.</p>
+    <p class="social">
+      <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Open Twitter in a new tab" title="Twitter">Twitter</a> ·
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Open Instagram in a new tab" title="Instagram">Instagram</a> ·
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Open LinkedIn in a new tab" title="LinkedIn">LinkedIn</a>
+    </p>
+  </div>
+</footer>
+
+
+
+  <!-- RSVP Modal (hidden by default) -->
+  <div id="rsvpOverlay" class="modal-overlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="rsvpTitle">
+      <div class="modal-header">
+        <h3 id="rsvpTitle">RSVP</h3>
+        <button id="rsvpClose" class="modal-close" aria-label="Close">×</button>
+      </div>
+
+      <form id="rsvpForm" class="modal-body">
+        <label class="label" for="rsvpName">Name</label>
+        <input id="rsvpName" type="text" placeholder="Your name" required />
+
+        <label class="label" for="rsvpEmail">Email</label>
+        <input id="rsvpEmail" type="email" placeholder="you@example.com" required />
+
+        <label class="label" for="rsvpMsg">Message (optional)</label>
+        <textarea id="rsvpMsg" rows="3" placeholder="Anything we should know?"></textarea>
+
+        <div class="modal-actions">
+          <button type="button" id="rsvpCancel" class="button ghost">Cancel</button>
+          <button type="submit" class="button">Submit RSVP</button>
+        </div>
+
+        <p class="hint">Demo: your RSVP is stored locally and a success message is shown.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="toTop" class="to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

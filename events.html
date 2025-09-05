@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EventSphere — Upcoming Events</title>
+
+  <meta property="og:title" content="EventSphere — Upcoming Events">
+  <meta property="og:description" content="Browse all upcoming events and search by keyword, venue, or city.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/placeholder.svg">
+  <meta name="theme-color" content="#0b1020">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="events">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="EventSphere Home">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>EventSphere</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="events.html" class="active">Upcoming Events</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container" style="display:flex;flex-direction:column;gap:12px;">
+      <h1 style="margin:0;">All Upcoming Events</h1>
+
+      <div class="search" role="search">
+        <input id="searchInput" type="search" placeholder="Search events by name, venue, or keyword…" aria-label="Search events" />
+        <button id="searchBtn" class="button" aria-label="Run search">Search</button>
+      </div>
+
+      <div id="eventsGrid" class="grid" aria-live="polite"></div>
+    </div>
+  </main>
+ 
+  <footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> EventSphere · All rights reserved.</p>
+    <p class="social">
+      <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Open Twitter in a new tab" title="Twitter">Twitter</a> ·
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Open Instagram in a new tab" title="Instagram">Instagram</a> ·
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Open LinkedIn in a new tab" title="LinkedIn">LinkedIn</a>
+    </p>
+  </div>
+</footer>
+
+
+<button id="toTop" class="to-top" aria-label="Back to top" title="Back to top">↑</button>
+  <script src="assets/js/app.js"></script>
+  
+
+</body>
+</html>
