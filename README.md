@@ -74,26 +74,7 @@ eventsphere/
 
 ---
 
-## ⚙️ Setup & Usage
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/<your-username>/eventsphere.git
-   cd eventsphere
-   ```
-
-2. **Run locally**
-   - Open `index.html` in your browser.
-   - Or use a simple local server:
-     ```bash
-     npx serve .
-     ```
-
-3. **Deploy**
-   - **GitHub Pages**: Push repo → Settings → Pages → Deploy from `main`.
-   - **Netlify**: Drag and drop the project folder or connect GitHub repo.
-
----
 
 ## 🚀 Demo Functionality
 
@@ -113,10 +94,10 @@ eventsphere/
 
 ## 👨‍💻 Author
 
-Developed by **[Your Name]**  
+Developed by **Abdullah Iftikhar**  
 Frontend Development Internship – Week 4 Project  
 
-- 🌐 [GitHub](https://github.com/your-username)  
+- 🌐 [GitHub] https://github.com/A-iftikhar02
 - 💼 [LinkedIn] https://www.linkedin.com/in/abdullah-iftikhar-a67986322/
 ---
 
